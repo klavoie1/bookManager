@@ -1,6 +1,5 @@
 import Widget as W
 import sys
-import PyQt5 as Qt
 
 if __name__ == "__main__":
 
@@ -11,4 +10,3 @@ if __name__ == "__main__":
     widget.show()
 
     sys.exit(app.exec_())
-
