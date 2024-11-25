@@ -9,5 +9,5 @@ class Main_Widget(QtWidgets.QWidget):
         book1 = Book.Book("Foundation", "Isaac Asimov", "1951", "Science Fiction", "320")
 
         label = QtWidgets.QLabel(self)
-        label.setText(book1.print_title())
+        label.setText(book1.show_title())
 

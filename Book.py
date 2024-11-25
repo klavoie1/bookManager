@@ -6,7 +6,7 @@ class Book:
         self.genre = genre
         self.page_count = page_count
 
-    def print_title(self):
+    def show_title(self):
         return self.title
 
     def print_details(self):
