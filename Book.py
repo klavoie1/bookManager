@@ -65,7 +65,7 @@ class Book:
     def set_page_count(self, new_page_count):
         if not new_page_count:
             raise ValueError("Page Count cannot be Empty!")
-        self._page_count
+        self._page_count = new_page_count
     
 
     def get_details(self):
