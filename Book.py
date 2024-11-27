@@ -77,3 +77,19 @@ class Book:
             "Genre": self._genre,
             "Pages": self._page_count
         }
+    
+    @classmethod
+    def from_json(cls, data):
+        """Creates a Book instance from the JSON Data"""
+        return cls(data["title"], data["author"], data["year"], data["genre"], data["pages"])
+    
+    @classmethod
+    def to_dict_details(cls, book):
+        """Converts a Book instance to dictonary form"""
+        return {
+            "Title": book.title,
+            "Author": book.author,
+            "Year": book.year,
+            "Genre": book.genre,
+            "Pages": book.pages
+        }
